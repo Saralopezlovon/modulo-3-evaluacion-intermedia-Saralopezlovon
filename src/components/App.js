@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Mi lista de pokemon</h1>
+        <h1 className="title">Mi lista de pokemon</h1>
         <PokeList>
           {this.state.pokemons.map((pokemon, index) => {
             return <Pokemon key={index} pokemon={pokemon} />;

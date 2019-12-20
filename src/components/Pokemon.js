@@ -5,10 +5,14 @@ function Pokemon(props) {
   return (
     <li className="card-pokemon">
       <img src={props.pokemon.url}></img>
-      <h2>{props.pokemon.name}</h2>
+      <h2 className="pokemon-name">{props.pokemon.name}</h2>
       <ul className="pokemon-types">
         {items.map((item, index) => {
-          return <li key={index}>{item}</li>;
+          return (
+            <li key={index} className="types">
+              {item}
+            </li>
+          );
         })}
       </ul>
     </li>
